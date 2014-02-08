@@ -766,7 +766,7 @@ def xdvi(filename=None, debug=False, paper=(14, 11)):
         print(print_cmd)
 
         os.system(print_cmd)
-        raw_input('!!!!Return to continue!!!!\n')
+        input('!!!!Return to continue!!!!\n')
 
         if debug:
             os.system(sys_cmd['rm'] + ' ' + filename[:-4] + '.aux ' + filename[:-4] + '.log')
